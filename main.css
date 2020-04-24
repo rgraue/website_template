@@ -16,6 +16,9 @@
 }
 
 body {
+  background-image:url("imgs/bannerpic.JPG");
+  background-attachment: fixed;
+  background-size: cover;
   background-color: grey;
   margin: 0;
   padding: 0;
@@ -28,15 +31,14 @@ body {
   color: #484848;
   cursor: default;
   height: 4em;
-  position: fixed;
   top: 0;
   width: 100%;
   font-family: "Quest", Arial;
   font-size: 1.2em;
+  background-attachment: fixed;
 }
 
 #menu h1 {
-left: 1em;
 opacity: 1;
 color: white;
 left: 3em;
@@ -79,13 +81,9 @@ position: absolute;
 
 /*------------------BANNER---------------*/
 #banner {
-  background-image:url("imgs/bannerpic.JPG");
-  background-attachment: : fixed;
-  background-position: center top;
-  background-size: cover;
   text-align: center;
   line-height: .5;
-  padding: 9em 0 10em 0;
+  padding: 9em 0 14em 0;
 }
 
 #banner h2 {
@@ -99,4 +97,77 @@ position: absolute;
   font-family: "Quest", Arial;
   color: white;
   font-size: 1.8em;
+}
+
+/*------------STRIPS----------------------*/
+.container-strip {
+  width: 100%;
+  height: 20em;
+  padding: 1em 0 1em 0;
+  background-color: rgba(255, 255, 255, .96);
+  border: solid 1px rgba(144, 144, 144, 1);
+}
+
+.left {
+  float:left;
+  width: 50%;
+  height: 20em;
+  border-right: solid 3px rgba(255, 144, 144, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  float: right;
+  width: 49%;
+  height: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-strip h2 {
+  font-family: "Quest", Arial;
+  font-size: 2.75em;
+  line-height: 1.5;
+  color: rgba(100,100,100, 1);
+  position: relative;
+  text-align: center;
+  padding: 0 4em 0 4em;
+}
+
+.container-strip p {
+  font-family: "Quest", Arial;
+  font-size: 1.5em;
+  color: rgba(100,100,100, 1);
+  position: relative;
+  text-align: center;
+  padding: 0 4em 0 4em;
+}
+
+/*------------Portholes----------------*/
+.container-ports {
+  height: 12em;
+  width: 100%;
+  padding: 1em 0 0 0;
+  background-color: rgba(100, 100, 100, 0.98);
+  text-align: center;
+}
+
+.container-ports h2 {
+  font-family: "Quest", Arial;
+  font-size: 2em;
+  color: white;
+}
+
+.port{
+  margin: 1em 3em 0 3em;
+  display: inline-grid;
+}
+.port img {
+  border-radius: 100%;
+  width: 5em;
+  border: solid 1px rgba(255, 144, 144, 1);
+
 }
